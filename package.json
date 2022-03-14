@@ -2,5 +2,24 @@
   "dependencies": {
     "inquirer": "^8.2.1",
     "jest": "^27.5.1"
-  }
+  },
+  "name": "10weekhomework-teamprofilegenerator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ooernica/10WeekHomework-TeamProfileGenerator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ooernica/10WeekHomework-TeamProfileGenerator/issues"
+  },
+  "homepage": "https://github.com/ooernica/10WeekHomework-TeamProfileGenerator#readme",
+  "description": ""
 }
