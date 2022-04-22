@@ -1,10 +1,15 @@
 const inquirer = require('inquirer');
+const teamSomething = [];
+const fs = require('fs');
+const teamProfile = require('./src/teamProfile')
+const teamStyle = require('./src/teamStyle')
+const Manager = require('./lib/Manager')
 
 inquirer
     .prompt([
         {
             type: 'input',
-            message: 'Enter manager member name',
+            message: 'Enter manager name',
             name: 'managerName',
         },
         {
@@ -25,9 +30,10 @@ inquirer
     ])
 
     .then(answers => {
-       console.log(answers)
+       const manager = new Manager('Manager', answers.managerName, answers.managerID, answers.managerEmailAddress, answers.officeNo);
+        teamSomething.push(manager);
        team();
-    })
+    });
 
 function team(){
     inquirer
@@ -51,14 +57,14 @@ function team(){
         answers.role==='Intern' ? intern() : 
         done();       
     })
-    }
+}
 
 function engineer() {
     inquirer
         .prompt([
             {
                 type: 'input',
-                message: 'Enter engineer member name',
+                message: 'Enter engineer name',
                 name: 'engineerName',
             },
             {
@@ -89,7 +95,7 @@ function intern() {
         .prompt([
             {
                 type: 'input',
-                message: 'Enter intern member name',
+                message: 'Enter intern name',
                 name: 'internName',
             },
             {
@@ -117,6 +123,23 @@ function intern() {
 
 
 function done() {
-    console.log('finished')
+    console.log('Finished!')
+    let generateHTML = teamProfile(teamSomething);
+    fs.writeFile('./dist/index.html', generateHTML, (error)=>{
+        if (error) {
+            console.log (error);
+        } else {
+            console.log('index.html written')
+        }
+    })
+
+    // let generateCSS = teamStyle();
+    // fs.writeFile('./dist/style.css', generateCSS, (error)=>{
+    //     if (error) {
+    //         console.log (error);
+    //     } else {
+    //         console.log('style.css written')
+    //     }
+    // })
 }
 
