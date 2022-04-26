@@ -4,6 +4,7 @@ const fs = require('fs');
 const teamProfile = require('./src/teamProfile')
 const teamStyle = require('./src/teamStyle')
 const Manager = require('./lib/Manager')
+const Engineer = require('./lib/Engineer')
 
 inquirer
     .prompt([
@@ -85,7 +86,8 @@ function engineer() {
     ])
 
     .then(answers => {
-       console.log(answers)
+       const engineer = new Engineer('Engineer', answers.engineerName, answers.engineerID, answers.engineerEmailAddress, answers.engineerGitHub);
+       teamSomething.push(engineer);
        team();
     })
 }
@@ -124,6 +126,7 @@ function intern() {
 
 function done() {
     console.log('Finished!')
+    console.log(teamSomething);
     let generateHTML = teamProfile(teamSomething);
     fs.writeFile('./dist/index.html', generateHTML, (error)=>{
         if (error) {
