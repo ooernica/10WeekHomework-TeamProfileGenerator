@@ -5,6 +5,7 @@ const teamProfile = require('./src/teamProfile')
 const teamStyle = require('./src/teamStyle')
 const Manager = require('./lib/Manager')
 const Engineer = require('./lib/Engineer')
+const Intern = require('./lib/Intern')
 
 inquirer
     .prompt([
@@ -118,7 +119,8 @@ function intern() {
     ])
 
     .then(answers => {
-       console.log(answers)
+        const intern = new Intern('Intern', answers.internName, answers.internID, answers.internEmailAddress, answers.internSchool);
+        teamSomething.push(intern);
        team();
     })
 }
