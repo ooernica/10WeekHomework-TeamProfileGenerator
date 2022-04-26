@@ -14,7 +14,7 @@ teamWebsite = (teamProfile) => {
         <div class="header col-12">
             <h1> My Team </h1>
         </div>
-        <div class="row myTeamCards">
+        <div class="row justify-content-around myTeamCards">
             ${teamMembers}
         </div>    
 
@@ -37,11 +37,11 @@ teamEmployees = (teamProfile) => {
         if (role == 'Manager') {
             officeNo = i.officeNo;
             managerCard = `
-            <div class="card col-4 px-4 py-2">
+            <div class="card col-md-4 col-sm-12 py-3" style="width: 18rem;" id="mCard>
             <div class="card-body">
             <div class="cardTitle">
                 <h4 class="card-title">${name}</h4>
-                <h5 class="card-subtitle mb-2">${role}</h5>
+                <h5 class="card-subtitle">${role}</h5>
             </div>  
               <div class="card">
                 <ul class="list-group list-group-flush">
@@ -57,7 +57,7 @@ teamEmployees = (teamProfile) => {
         } else if (role == 'Engineer') {
             engineerGitHub = i.engineerGitHub;
             engineerCard = `
-            <div class="card col-4" style="width: 18rem;">
+            <div class="card col-4 py-3" style="width: 18rem;">
             <div class="card-body">
             <div class="cardTitle">
                 <h4 class="card-title">${name}</h4>
@@ -77,7 +77,7 @@ teamEmployees = (teamProfile) => {
         } else {
             internSchool = i.internSchool;
             internCard = `
-            <div class="card col-4" style="width: 18rem;">
+            <div class="card col-4 py-3" style="width: 18rem;">
             <div class="card-body">
             <div class="cardTitle">
                 <h4 class="card-title">${name}</h4>
