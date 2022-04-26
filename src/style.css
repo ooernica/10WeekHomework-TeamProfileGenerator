@@ -1,0 +1,40 @@
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.header {
+    background-color: rgba(241, 80, 80, 0.93);
+    padding: 40px;
+}
+
+.myTeamCards {
+    padding: 4px;
+}
+
+.cardTitle {
+    color: white;
+    padding: 10px;
+    background-color: rgb(23, 129, 236);
+
+}
+
+.card-subtitle {
+    font-size: medium;
+}
+
+.card {
+    padding-top: 10px;
+    box-shadow: 5px;
+    border-radius: 3px;
+    background-color: rgb(253, 249, 249);
+}
+
+.card-body {
+    background-color: rgb(253, 249, 249);
+}
+
+.list-group {
+    background-color: white;
+}
+
