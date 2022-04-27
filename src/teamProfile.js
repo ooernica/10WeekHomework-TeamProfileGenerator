@@ -17,10 +17,8 @@ teamWebsite = (teamProfile) => {
         <div class="row justify-content-around myTeamCards">
             ${teamMembers}
         </div>    
-
     </body>
     </html>
-
     `;
 
     return html;
@@ -37,7 +35,7 @@ teamEmployees = (teamProfile) => {
         if (role == 'Manager') {
             officeNo = i.officeNo;
             managerCard = `
-            <div class="card col-md-4 col-sm-12 py-3" style="width: 18rem;" id="mCard>
+            <div class="card col-md-4 col-sm-12 py-3" style="width: 18rem;" id="mCard">
             <div class="card-body">
             <div class="cardTitle">
                 <h4 class="card-title">${name}</h4>
