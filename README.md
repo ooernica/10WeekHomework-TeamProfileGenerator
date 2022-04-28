@@ -42,7 +42,8 @@ npm i to install all dependencies
 type "node index.js" to run
           
 ## Deployment
-    https://ooernica.github.io/10WeekHomework-TeamProfileGenerator/
+  
+  https://ooernica.github.io/10WeekHomework-TeamProfileGenerator/
           
 ## License
 N/A
