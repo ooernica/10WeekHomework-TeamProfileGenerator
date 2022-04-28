@@ -27,7 +27,6 @@ THEN I exit the application, and the HTML is generated
     
 ## Table of Contents
 - [Dependencies](#Dependencies)
-- [Deployment](#Deployment)
 - [License](#License)
 - [Contributors](#Contributors)
 - [Photo](#Photo)
@@ -41,10 +40,6 @@ npm i to install all dependencies
 
 type "node index.js" to run
           
-## Deployment
-  
-  https://ooernica.github.io/10WeekHomework-TeamProfileGenerator/
-          
 ## License
 N/A
           
@@ -52,6 +47,8 @@ N/A
 N/A
 
 ## Photo
+
+![prompter](https://user-images.githubusercontent.com/91104984/165653360-05e6d8e2-27ec-4164-a0fd-bd88b666a7c0.png)
 
 ![screenshot](https://user-images.githubusercontent.com/91104984/165651754-3a38204f-ebf8-47f5-9596-4a7d7baaae1f.png)
 
