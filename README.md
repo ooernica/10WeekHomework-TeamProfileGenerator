@@ -46,11 +46,13 @@ N/A
 ## Contributors
 N/A
 
-## Photo
+## Photo and Video
 
 ![prompter](https://user-images.githubusercontent.com/91104984/165653360-05e6d8e2-27ec-4164-a0fd-bd88b666a7c0.png)
 
 ![screenshot](https://user-images.githubusercontent.com/91104984/165651754-3a38204f-ebf8-47f5-9596-4a7d7baaae1f.png)
+
+See the video of the code in action [here](https://drive.google.com/file/d/1gcgS8WDIp535CRxfAIzFgrunsuk0bJh9/view)
 
     
 ## Tests
